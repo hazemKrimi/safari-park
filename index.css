@@ -15,3 +15,24 @@ section {
   align-items: center;
   justify-content: center;
 }
+
+.main-entrance {
+  background: url(./assets/main-entrance-background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.land-section {
+  background: url(./assets/land-section-background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.water-section {
+  background: url(./assets/water-section-background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
