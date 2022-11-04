@@ -1,0 +1,30 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  top: unset !important;
+  bottom: 50px !important;
+  z-index: 10;
+}
+
+#main-entrance, #land-section, #water-section {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.animal {
+  position: absolute;
+}
+
+#gazelle {
+  top: 500px;
+  left: 500px;
+}
+
+#gazelle svg {
+  width: 200px;
+  height: 200px;
+}
