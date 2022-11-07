@@ -1,9 +1,7 @@
-import moveGazelle from './animations/gazelle/index.mjs';
+import fetchAnimal from './utils/fetchAnimal.mjs';
+import runAnimations from './animations/run.mjs';
 
 (async () => {
-  const response = await fetch('./assets/gazelle.svg');
-  const gazelle = await response.text();
-
-  document.querySelector('#gazelle').innerHTML = gazelle;
-  moveGazelle();
+  await fetchAnimal('./assets/animals/gazelle.svg', '#gazelle');
+  await runAnimations();
 })();

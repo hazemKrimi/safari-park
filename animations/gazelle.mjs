@@ -1,6 +1,8 @@
-import { animations as movingRearRightFootAnimations } from './moveRearRightFoot.mjs';
+import getMorphAnimations from '../utils/getMorphAnimations.mjs';
 
-const moveGazelle = () => {
+const moveGazelle = async () => {
+  const animations = await getMorphAnimations('./assets/morphed-animals/gazelle.svg', '#gazelle');
+
   const timeline = anime.timeline({
     easing: 'easeInOutSine',
     direction: 'alternate',
@@ -13,7 +15,7 @@ const moveGazelle = () => {
     translateX: 500
   });
 
-  movingRearRightFootAnimations.forEach(animation => {
+  animations.forEach(animation => {
     timeline.add(animation, 0);
   });
 };
