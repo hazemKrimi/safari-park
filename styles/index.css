@@ -23,14 +23,35 @@ body::-webkit-scrollbar {
 
 .animal {
   position: absolute;
+  visibility: hidden;
 }
 
 #gazelle {
-  top: 500px;
-  left: 500px;
+  top: 800px;
+  left: 600px;
 }
 
 #gazelle svg {
   width: 200px;
   height: 200px;
+}
+
+#lion {
+  top: 400px;
+  left: 1100px;
+}
+
+#lion svg {
+  width: 200px;
+  height: 200px;
+}
+
+#cheetah {
+  top: 675px;
+  right: 300px;
+}
+
+#cheetah svg {
+  width: 100px;
+  height: 100px;
 }

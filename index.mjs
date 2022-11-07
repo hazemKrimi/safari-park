@@ -1,7 +1,5 @@
-import fetchAnimal from './utils/fetchAnimal.mjs';
-import runAnimations from './animations/run.mjs';
+import runLandAnimations from './animations/land.mjs';
 
-(async () => {
-  await fetchAnimal('./assets/animals/gazelle.svg', '#gazelle');
-  await runAnimations();
-})();
+window.addEventListener('load', async () => {
+  await runLandAnimations();
+});
