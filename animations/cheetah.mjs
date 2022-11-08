@@ -6,7 +6,9 @@ export default async () => {
   const timeline = anime.timeline({
     easing: 'easeInOutSine',
     duration: 3500,
-    autoplay: false
+    autoplay: false,
+    direction: 'alternate',
+    loop: true
   });
 
   timeline.add(
