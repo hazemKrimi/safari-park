@@ -4,11 +4,9 @@ export default async () => {
   const animations = await getMorphAnimations('./assets/morphed-animals/gazelle.svg', '#gazelle');
 
   const timeline = anime.timeline({
-    easing: 'easeInOutSine',
-    duration: 3500,
-    autoplay: false,
-    direction: 'alternate',
-    loop: true
+    easing: 'linear',
+    duration: 5000,
+    autoplay: false
   });
 
   timeline.add(

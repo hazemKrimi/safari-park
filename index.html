@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/entrance.css">
+  <link rel="stylesheet" href="./styles/land.css">
+  <link rel="stylesheet" href="./styles/water.css">
   <script defer src="./lib/anime.min.js"></script>
   <script defer type="module" src="./index.mjs"></script>
   <title>Safari park</title>
@@ -12,16 +15,20 @@
 <body>
   <div class="slider-wrapper">
     <div class="slide">
-      <object type="image/svg+xml" data="./assets/landscapes/main-entrance-background.svg" id="land-section"></object>
+      <div class='animal' id="crocodile"></div>
+      <div class='animal' id="elephant"></div>
+      <object class="landscape" type="image/svg+xml" data="./assets/landscapes/main-entrance-background.svg" id="main-entrance"></object>
     </div>
     <div class="slide">
       <div class='animal' id="lion"></div>
       <div class='animal' id="gazelle"></div>
       <div class='animal' id="cheetah"></div>
-      <object type="image/svg+xml" data="./assets/landscapes/land-section-background.svg" id="land-section"></object>
+      <object class="landscape" type="image/svg+xml" data="./assets/landscapes/land-section-background.svg" id="land-section"></object>
     </div>
     <div class="slide">
-      <object type="image/svg+xml" data="./assets/landscapes/water-section-background.svg" id="land-section"></object>
+      <div class='animal' id="whale"></div>
+      <div class='animal' id="squid"></div>
+      <object class="landscape" type="image/svg+xml" data="./assets/landscapes/water-section-background.svg" id="water-section"></object>
     </div>
   </div>
   <div>

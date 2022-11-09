@@ -1,0 +1,19 @@
+#whale {
+  top: 450px;
+  right: -50px;
+}
+
+#whale svg {
+  width: 800px;
+  height: 500px;
+}
+
+#squid {
+  top: 550px;
+  left: 300px;
+}
+
+#squid svg {
+  width: 400px;
+  height: 400px;
+}

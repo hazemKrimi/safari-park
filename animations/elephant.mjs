@@ -1,7 +1,7 @@
 import getMorphAnimations from '../utils/getMorphAnimations.mjs';
 
 export default async () => {
-  const animations = await getMorphAnimations('./assets/morphed-animals/lion.svg', '#lion');
+  const animations = await getMorphAnimations('./assets/morphed-animals/elephant.svg', '#elephant');
 
   const timeline = anime.timeline({
     easing: 'linear',
@@ -11,8 +11,8 @@ export default async () => {
 
   timeline.add(
     {
-      targets: '#lion',
-      scale: [0, 1.1],
+      targets: '#elephant',
+      translateX: -50,
       opacity: [0, 1]
     },
     0

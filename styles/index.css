@@ -15,6 +15,7 @@ body::-webkit-scrollbar {
   color: #000000;
   opacity: 0.7;
   padding: 0rem 0.5rem;
+  z-index: 3;
 }
 
 .slide-arrow:hover,
@@ -40,43 +41,16 @@ body::-webkit-scrollbar {
   overflow: hidden;
 }
 
-#main-entrance, #land-section, #water-section {
+.landscape {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
+  z-index: 1;
 }
 
 .animal {
   position: absolute;
-  visibility: hidden;
-}
-
-#lion {
-  top: 300px;
-  left: 1100px;
-}
-
-#lion svg {
-  width: 200px;
-  height: 200px;
-}
-
-#gazelle {
-  top: 650px;
-  left: 600px;
-}
-
-#gazelle svg {
-  width: 200px;
-  height: 200px;
-}
-
-#cheetah {
-  top: 525px;
-  right: 300px;
-}
-
-#cheetah svg {
-  width: 100px;
-  height: 100px;
+  z-index: 2;
+  opacity: 0;
 }

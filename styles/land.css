@@ -1,0 +1,29 @@
+#lion {
+  top: 300px;
+  left: 1100px;
+}
+
+#lion svg {
+  width: 200px;
+  height: 200px;
+}
+
+#gazelle {
+  top: 650px;
+  left: 600px;
+}
+
+#gazelle svg {
+  width: 200px;
+  height: 200px;
+}
+
+#cheetah {
+  top: 525px;
+  right: 300px;
+}
+
+#cheetah svg {
+  width: 100px;
+  height: 100px;
+}
